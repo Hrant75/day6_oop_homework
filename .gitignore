@@ -1,0 +1,7 @@
+# no .a files
+.idea
+out
+.git
+
+# but do lib.a
+!lib.a 
