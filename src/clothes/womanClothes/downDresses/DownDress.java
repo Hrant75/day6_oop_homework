@@ -14,4 +14,8 @@ public class DownDress extends WomanCloth {
     public DownDress(String color){
         this.color = color;
     }
+
+    public DownDress(String color, int price) {
+        super(color, price);
+    }
 }

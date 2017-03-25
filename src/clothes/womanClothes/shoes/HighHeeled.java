@@ -6,7 +6,11 @@ package clothes.womanClothes.shoes;
 public class HighHeeled extends Shoe {
     public final String name = "High Heeled";
 
-    public HighHeeled(String color){
+    public HighHeeled(String color) {
         this.color = color;
+    }
+
+    public HighHeeled(String color, int price) {
+        super(color, price);
     }
 }

@@ -9,4 +9,8 @@ public class Cap extends Hat {
     public Cap(String color){
         this.color = color;
     }
+
+    public Cap(String color, int price) {
+        super(color, price);
+    }
 }

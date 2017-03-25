@@ -11,4 +11,8 @@ public class Hat extends WomanCloth{
     public Hat(String color){
         this.color = color;
     }
+
+    public Hat(String color, int price) {
+        super(color, price);
+    }
 }

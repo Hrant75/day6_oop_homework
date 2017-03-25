@@ -9,4 +9,8 @@ public class Skirt extends DownDress {
     public Skirt(String color){
         this.color = color;
     }
+
+    public Skirt(String color, int price) {
+        super(color, price);
+    }
 }

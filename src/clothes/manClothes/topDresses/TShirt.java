@@ -9,4 +9,8 @@ public class TShirt extends TopDress {
     public TShirt(String color){
         this.color = color;
     }
+
+    public TShirt(String color, int price) {
+        super(color, price);
+    }
 }

@@ -13,4 +13,8 @@ public class DownDress extends ManCloth {
     public DownDress(String color){
         this.color = color;
     }
+
+    public DownDress(String color, int price) {
+        super(color, price);
+    }
 }

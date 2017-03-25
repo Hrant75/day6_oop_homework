@@ -9,4 +9,8 @@ public class Beret extends Hat {
     public Beret(String color){
         this.color = color;
     }
+
+    public Beret(String color, int price) {
+        super(color, price);
+    }
 }

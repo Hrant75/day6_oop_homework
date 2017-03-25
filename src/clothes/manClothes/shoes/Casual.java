@@ -9,4 +9,8 @@ public class Casual extends Shoe {
     public Casual(String color){
         this.color = color;
     }
+
+    public Casual(String color, int price) {
+        super(color, price);
+    }
 }

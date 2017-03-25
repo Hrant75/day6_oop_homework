@@ -9,4 +9,8 @@ public class Boot extends Shoe {
     public Boot(String color){
         this.color = color;
     }
+
+    public Boot(String color, int price) {
+        super(color, price);
+    }
 }

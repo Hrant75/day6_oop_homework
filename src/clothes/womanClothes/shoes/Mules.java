@@ -9,4 +9,8 @@ public class Mules extends Shoe {
     public Mules(String color){
         this.color = color;
     }
+
+    public Mules(String color, int price) {
+        super(color, price);
+    }
 }

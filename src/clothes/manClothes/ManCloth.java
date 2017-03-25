@@ -14,4 +14,8 @@ public class ManCloth extends Cloth {
     public ManCloth(String color){
         this.color = color;
     }
+
+    public ManCloth(String color, int price) {
+        super(color, price);
+    }
 }

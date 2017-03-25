@@ -9,4 +9,8 @@ public class Athletic extends Shoe {
     public Athletic(String color){
         this.color = color;
     }
+
+    public Athletic(String color, int price) {
+        super(color, price);
+    }
 }

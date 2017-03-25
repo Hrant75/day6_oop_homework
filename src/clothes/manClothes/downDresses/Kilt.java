@@ -9,4 +9,8 @@ public class Kilt extends DownDress {
     public Kilt(String color){
         this.color = color;
     }
+
+    public Kilt(String color, int price) {
+        super(color, price);
+    }
 }
