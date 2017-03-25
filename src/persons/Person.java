@@ -7,36 +7,17 @@ import pets.dogs.Dog;
  * Created by Hrant on 3/21/2017.
  */
 public class Person {
-    String firstName;
-    String lastName;
-    int age;
-    String hairColor;
-    String eyeColor;
-    int height;
-    int weight;
-    Cat cat;
-    Dog dog;
+    protected String firstName;
+    protected String lastName;
+    protected int age;
+    protected String hairColor;
+    protected String eyeColor;
+    protected int height;
+    protected int weight;
+    private Cat cat;
+    private Dog dog;
 
-    public String toString(){
-        return String.format("Man");
-    }
-
-    public void goOut(){
-    }
-
-    public void draw(){
-        System.out.println(String.format("Name: %s %s", firstName, lastName));
-        if(age != 0) System.out.println("Age: " + age);
-        if(hairColor != null) System.out.println("Hair Color: " + hairColor);
-        if(eyeColor != null) System.out.println("Eye Color: " + eyeColor);
-        if(height != 0) System.out.println(" Height: " + height);
-        if(weight != 0) System.out.println(" Weight: " + weight);
-        if(hasPets()) {
-            System.out.println("He has a " + ( (cat != null)? "cat" : "dog" ) );
-            System.out.println("His pets name is " + ( (cat != null)? cat.getName() : dog.getName() ) );
-        }
-
-    }
+    public Person() {}
 
     public Person(String firstName, String lastName){
         this.firstName = firstName;
@@ -54,6 +35,27 @@ public class Person {
         this(firstName, lastName, age, hairColor, eyeColor);
         this.height = height;
         this.weight = weight;
+    }
+
+    public String toString(){
+        return "Person";
+    }
+
+    public void goOut(){
+    }
+
+    public void draw(){
+        System.out.println(String.format("Name: %s %s", firstName, lastName));
+        if(age != 0) System.out.println("Age: " + age);
+        if(hairColor != null) System.out.println("Hair Color: " + hairColor);
+        if(eyeColor != null) System.out.println("Eye Color: " + eyeColor);
+        if(height != 0) System.out.println(" Height: " + height);
+        if(weight != 0) System.out.println(" Weight: " + weight);
+        if(hasPets()) {
+            System.out.println("He has a " + ( (cat != null)? "cat" : "dog" ) );
+            System.out.println("His pets name is " + ( (cat != null)? cat.getName() : dog.getName() ) );
+        }
+
     }
 
     public boolean isDressed(){
@@ -99,14 +101,6 @@ public class Person {
 
     public Dog getDog() {
         return dog;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
     }
 
     public void setAge(int age) {

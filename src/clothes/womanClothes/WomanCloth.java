@@ -6,7 +6,12 @@ import clothes.Cloth;
  * Created by Hrant on 20.03.2017.
  */
 public class WomanCloth extends Cloth {
+    public final String name = "WomanCloth";
+
+    public WomanCloth() {
+    }
+
     public WomanCloth(String color){
-        super(color);
+        this.color = color;
     }
 }

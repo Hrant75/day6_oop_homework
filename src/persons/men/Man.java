@@ -10,21 +10,25 @@ import persons.Person;
  * Created by Hrant on 3/21/2017.
  */
 public class Man extends Person {
-    Shoe shoes;
-    TopDress topDress;
-    DownDress downDress;
-    Hat hat;
-    boolean hasTattoo;
-    String   tattooColor;
+    private Shoe shoes;
+    private TopDress topDress;
+    private DownDress downDress;
+    private Hat hat;
+    private boolean hasTattoo;
+    private String   tattooColor;
 
     public Man(String firstName, String lastName){
-        super(firstName, lastName);
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public Man(String firstName, String lastName, int age, String hairColor, String eyeColor, int height, int weight){
-        super(firstName, lastName, age, hairColor, eyeColor);
-        this.setAge(age);
-        this.setWeight(weight);
+        this(firstName, lastName);
+        this.age = age;
+        this.hairColor = hairColor;
+        this.eyeColor = eyeColor;
+        this.height = height;
+        this.weight = weight;
     }
 
     public void goOut(){
@@ -41,6 +45,10 @@ public class Man extends Person {
         if(topDress != null) System.out.println("His top dress is " + topDress);
         if(hat != null) System.out.println("His hat is " + hat);
         if(hasTattoo) System.out.println("He has " + tattooColor + " tattoo");
+    }
+
+    public String toString() {
+        return "Man";
     }
 
     public Shoe getShoes() {

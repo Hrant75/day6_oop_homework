@@ -4,8 +4,9 @@ package clothes.womanClothes.topDresses;
  * Created by Ashot on 3/21/2017.
  */
 public class Dress extends TopDress {
+    public final String name = "dress";
+
     public Dress(String color){
-        super(color);
-        this.setName("dress");
+        this.color = color;
     }
 }

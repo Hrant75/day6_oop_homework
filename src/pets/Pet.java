@@ -4,17 +4,15 @@ package pets;
  * Created by Hrant on 20.03.2017.
  */
 public class Pet {
-    private String name;
-    private int age;
-    private String color;
+    protected String name;
+    protected int age;
+    protected String color;
     private boolean hungry;
 
-    public Pet(String name){
-        this.name = name;
-    }
+    public Pet() {}
 
-    public Pet(String name, Pet type, int age, String color){
-        this(name);
+    public Pet(String name, int age, String color){
+        this.name = name;
         this.age = age;
         this.color = color;
     }
@@ -40,18 +38,6 @@ public class Pet {
 
     public String getColor() {
         return color;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public void setHungry(boolean hungry) {

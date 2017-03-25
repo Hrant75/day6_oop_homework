@@ -6,7 +6,12 @@ import clothes.womanClothes.WomanCloth;
  * Created by Ashot on 3/21/2017.
  */
 public class TopDress extends WomanCloth {
+    public final String name = "WomanCloth";
+
+    public TopDress() {
+    }
+
     public TopDress(String color){
-        super(color);
+        this.color = color;
     }
 }

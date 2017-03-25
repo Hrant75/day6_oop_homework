@@ -11,22 +11,26 @@ import persons.Person;
  */
 public class WoMan extends Person {
 
-    Shoe shoes;
-    TopDress topDress;
-    DownDress downDress;
-    Hat hat;
-    Boolean hasMakeup;
-    String lipstickColor;
-    Boolean hasEarrings;
+    private Shoe shoes;
+    private TopDress topDress;
+    private DownDress downDress;
+    private Hat hat;
+    private Boolean hasMakeup;
+    private String lipstickColor;
+    private Boolean hasEarrings;
 
     public WoMan(String firstName, String lastName){
-        super(firstName, lastName);
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     public WoMan(String firstName, String lastName, int age, String hairColor, String eyeColor, int height, int weight){
-        super(firstName, lastName, age, hairColor, eyeColor);
-        this.setAge(age);
-        this.setWeight(weight);
+        this(firstName, lastName);
+        this.age = age;
+        this.hairColor = hairColor;
+        this.eyeColor = eyeColor;
+        this.height = height;
+        this.weight = weight;
     }
 
     public void goOut(){
@@ -35,6 +39,10 @@ public class WoMan extends Person {
         else if(!hasMakeup) System.out.println("I will not go out without makeup");
         else
             System.out.println("I look great, going out");
+    }
+
+    public String toString() {
+        return "Woman";
     }
 
     public void draw(){

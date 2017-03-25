@@ -4,8 +4,9 @@ package clothes.womanClothes.shoes;
  * Created by Ashot on 3/21/2017.
  */
 public class HighHeeled extends Shoe {
+    public final String name = "High Heeled";
+
     public HighHeeled(String color){
-        super(color);
-        this.setName("High Heeled");
+        this.color = color;
     }
 }
